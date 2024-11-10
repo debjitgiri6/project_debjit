@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Manpower Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Advanced Manpower Management System</h1>
+
+        <!-- Employee Form --> 
+        <div class="form-container">
+            <h2 id="form-title">Add New Employee</h2>
+            <form id="employeeForm">
+                <input type="hidden" id="empId" />
+                <label for="empName">Employee Name:</label>
+                <input type="text" id="empName" placeholder="Enter Name" required>
+                
+                <label for="empRole">Role:</label>
+                <input type="text" id="empRole" placeholder="Enter Role" required>
+                
+                <label for="empDept">Department:</label>
+                <input type="text" id="empDept" placeholder="Enter Department" required>
+                
+                <label for="empSalary">Salary:</label>
+                <input type="number" id="empSalary" placeholder="Enter Salary" required min="1000">
+                
+                <button type="submit">Add Employee</button>
+            </form>
+        </div>
+
+        <!-- Employee List -->
+        <div class="employee-list-container">
+            <h2>Employee List</h2>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic employee data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
